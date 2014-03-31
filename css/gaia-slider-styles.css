@@ -7,6 +7,10 @@
 body {
 	background: #bada55;
 }
+.center {
+	text-align: center;
+	width: 100%;
+}
 /*container wrapper styles*/
 #gaia-slide-wrapper {
 	max-width: 60rem;
@@ -29,7 +33,6 @@ body {
 	-webkit-user-select: none; /* Chrome/Safari */        
 	-moz-user-select: none; /* Firefox */
 	-ms-user-select: none; /* IE10+ */
-
 	/* Rules below not implemented in browsers yet */
 	-o-user-select: none;
 	user-select: none;
@@ -57,24 +60,33 @@ body {
 
 /*indicators styleing*/
 #gaia-indicators {
-	max-width: 60rem;
-	text-align: center;
+	max-width: 60.5rem;
 	margin: 0 auto;
+	text-align: center;
+	overflow: hidden;
 }
 
 #gaia-indicators .gaia-thumb {
-	max-width: 20%;
+	max-width: 19%;
 	height: auto;
 	display: inline-block;
-	padding: 5px;
-	margin: 5px;
+	padding: .3rem;
+	margin: .5rem 1% .5rem 0px;
 	border: 3px solid #ccc;
+	cursor: pointer;
+}
+#gaia-indicators .gaia-thumb:nth-child(5n+0) {
+	margin: .5rem 0px;
 }
 #gaia-indicators .gaia-thumb.active-thumb {
-	border: 3px solid #000;
+	border: .2rem solid #000;
 }
 #gaia-indicators img {
 	display: inline-block;
 	width: 100%;
 	height: auto;
+}
+
+#gaia-more{
+	cursor: pointer;
 }
